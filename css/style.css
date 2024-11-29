@@ -8,11 +8,34 @@ body{
     width: 100%;
 }
 
+.galeria_imagens_inicio{
+    width: 70vw;
+    margin: 50px;
+    margin-left: 15vw;
+    box-shadow: 0 0 0 10px #ffc107;
+    h1{
+    
+        text-align: center;
+        color:#212529; 
+        font-size: 60px;
+    }
+    h2{
+        color: #212529;
+    }
+    .container-images{
+
+    img{
+        margin: 20px;
+        border-radius: 20px;
+    }
+}
+}
 .container-images {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     text-align: center;
     margin: 20px 0;
+    
 
 }
 .container-images-meio{
@@ -20,6 +43,7 @@ body{
     grid-template-columns: 50% 50% 50%;
     text-align: center;
     margin: 20px 0;
+
     img{
         width: 600px;
         height: 400px;
@@ -45,26 +69,6 @@ body{
 }
 
 
-.galeria_imagens_inicio{
-    margin: 50px;
-    box-shadow: 0 0 0 10px #ffc107;
-    h1{
-    
-        text-align: center;
-        color:#212529; 
-        font-size: 60px;
-    }
-    h2{
-        color: #212529;
-    }
-    .container-images{
-
-    img{
-        margin: 20px;
-        border-radius: 20px;
-    }
-}
-}
 
 .participacao{
   h1{color: #212529; text-align: center; font-size: 100px; font-style:initial}
@@ -100,6 +104,27 @@ body{
         margin: 10px;
     }
 }
+
+.botao_trajetoria {
+        background-color: #ffd700; /* Cor de fundo dourada */
+        color: #000; /* Cor do texto */
+        border: none; /* Remove a borda */
+        border-radius: 10px;
+        width: 12vw;
+        height: 5vh;
+        margin-top: 2vh;
+        font-size: 15px; /* Tamanho do texto */
+        cursor: pointer; /* Cursor de mão ao passar por cima */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+        transition: transform 0.2s, background-color 0.3s; /* Efeitos suaves */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      
+.botao_trajetoria:hover {
+        background-color: #ffc107; /* Muda a cor ao passar o mouse */
+        transform: scale(1.05); /* Aumenta levemente o botão */
+      }
+
 
 .textoFormulário{
     padding: 20px;
@@ -161,8 +186,6 @@ textarea {
 
 .forms-button{
     border-radius: 5px;
-
-
 }
 .forms-button:hover{
     background-color: #ffc107;
@@ -203,19 +226,29 @@ textarea {
         padding: 10px;
     }
 }
-
+.mainsobre{
+    padding-top: 10vh;
+}
 
 .container-lado{
     width: 45vw;
     height: 50vh;
     padding-top: 9vh;
     margin: 0px;
-    margin-left: 5vw;
+    margin-left: 6vw;
     display: inline-block;
-    h5{    
+    h3{
+        font-size: 20px;
+        color: black;
+    }
+    h1{
+        color: #000000;
+        font-size: 50px;
+    }
+    p{    
+        margin-top: 2vh;
         height: 50vh;
-        font-size: 1.3vw;
-        padding: 20px;
+        font-size: 18px;
         border-radius:20px ;
         background-color: aliceblue; 
         color: #000000;
@@ -236,10 +269,13 @@ textarea {
         border-radius: 20px;
     }
 }
+.sobreprincipal{
+    height: 55vh;
+}
 
 .trajetoria{
     width: 100%;
-    padding-top: 100px;
+    margin-top: 30vh;
     display: flex;
     img{
         width: 100%;
@@ -273,7 +309,6 @@ header{
   }
   .jogo_de_cartas{
     margin-left: 10vw;
-    width: 45vw;
     height: 40vh;
     display: inline-block;
     img{
@@ -285,16 +320,28 @@ header{
     width: 80vmin;    
     display: inline-block;
     text-align: center;
+    margin-left:15vh ;
     h1{  
-        font-size: 2vw;   
+        font-size: 25px;   
         color: #ffffff;
         text-align: justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 }
 .textoSinergy{
     font-size: 50px;
     padding-bottom: 1%;
     display: inline-block;
+    h1{     
+        color: #ffffff;
+        text-align: justify;
+    }
+}
+.textoSinergyCartas{
+    font-size: 50px;
+    padding-bottom: 1%;
+    display: inline-block;
+    margin-left: 15vh;
     h1{     
         color: #ffffff;
         text-align: justify;
@@ -357,8 +404,15 @@ header{
 .reconhecimentos_inicio{
     padding-top: 50px;
 }
+.cartas-dinamicas{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    margin: 0px 0;
 
+}
 .container-cartas{
+
     position: relative;
     width: 100%; /* Certifica-se de que o contêiner ocupe todo o espaço */
     max-width: 350px; /* Define uma largura máxima, se necessário */
@@ -402,12 +456,6 @@ header{
     transform:rotateY(180deg);
     color: black;
     text-align: center;
-}
-.cartas-dinamicas{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    text-align: center;
-    margin: 0px 0;
 }
 
 
@@ -541,8 +589,8 @@ main{
     }
     }
     .main-cartas{
-        padding: 0%;
-        padding-left: 0%;
+        margin-left: 5vh;
+        margin-right: 5vh;
     }
     
     main{
@@ -558,7 +606,7 @@ main{
         }
         li{
             font-size: 3vh;
-            width: 100%;
+            width: 0%;
         }
 
     }
