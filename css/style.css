@@ -7,15 +7,6 @@ body{
     height: 85vh;
     width: 100%;
 }
-.textoMotivador{
-    font-size: 30px;
-    background-color: #ffc107;
-    padding: 10px;
-    h1{     
-        color: #000000;
-        text-align: center;
-    }
-}
 
 .container-images {
     display: grid;
@@ -32,6 +23,9 @@ body{
     img{
         width: 600px;
         height: 400px;
+    }
+    h5{
+        color: #000000;
     }
 }
 
@@ -52,12 +46,19 @@ body{
 
 
 .galeria_imagens_inicio{
+    margin: 50px;
+    box-shadow: 0 0 0 10px #ffc107;
+    h1{
+    
+        text-align: center;
+        color:#212529; 
+        font-size: 60px;
+    }
     h2{
-        color: #ffc107;
+        color: #212529;
     }
     .container-images{
-    margin: 50px;
-    box-shadow: 0 0 0 5px #ffc107;
+
     img{
         margin: 20px;
         border-radius: 20px;
@@ -66,8 +67,8 @@ body{
 }
 
 .participacao{
-  h1{color: #ffc107; text-align: center; font-size: 100px; font-style:initial}
-  h2{color: aliceblue; text-align: center; font-size: 80px;}
+  h1{color: #212529; text-align: center; font-size: 100px; font-style:initial}
+  h2{color: #ffc107; text-align: center; font-size: 80px;}
 }
 
 .galeria_imagens_meio{
@@ -90,7 +91,8 @@ body{
         margin: 10px;
         border-radius: 10px;
         h4{
-            color: #ffc107;
+            font-size: 30px;
+            color: #212529;
         }
     }
     img{
@@ -253,6 +255,9 @@ textarea {
 }
 header{
     padding-bottom: 90px;
+    a{
+        font-weight: 600;
+    }
 }
 .textoSinergy3{
     h1{
@@ -261,7 +266,12 @@ header{
         text-align: center;
     }
 }
-.jogo_de_cartas{
+/* Add this CSS to your stylesheet */
+.navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+  }
+  .jogo_de_cartas{
     margin-left: 10vw;
     width: 45vw;
     height: 40vh;
@@ -309,7 +319,7 @@ header{
 .reconhecimentos_inicio{
     width: 95vw;
     margin-left:2.5vw;
-    box-shadow: 0 0 0 5px #ffc107;
+    box-shadow: 0 0 0 5px #212529;
     .Sinergia{font-size: 50px;
         color: #ffffff;
         text-align: center;}
@@ -402,7 +412,7 @@ header{
 
 
 main{
-    flex: 1 1 0;
+
 }
 
 .container-video{
@@ -422,6 +432,48 @@ main{
     background-color: #ffc107;
     border: 5px;
 }
+
+.dropdown-menu {
+    width: 100vw; /* Garante que a largura mínima preencha todo o texto */
+    padding: 0.5rem 1rem; /* Ajusta o espaço interno */
+    white-space: nowrap; /* Evita quebra de linha nos textos */
+    box-sizing: border-box; /* Inclui padding no cálculo da largura */
+  }
+  .carousel-container {
+    width: 70%; /* Ocupa 70% da largura da tela */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    position: relative; /* Mantém o conteúdo posicionado */
+  border-radius: 15px; /* Define as bordas arredondadas */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona um sombreamento elegante (opcional) */
+    margin-top: 5vh;
+  }
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    max-width: 70%; /* Limita a largura do texto */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.5rem; /* Ajusta o tamanho do título */
+  }
+  
+  .carousel-inner img {
+    object-fit: cover; /* Garante que as imagens fiquem bem ajustadas *//* Define uma altura padrão */
+    height: 70vh;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      height: 250px; /* Reduz a altura para dispositivos menores */
+    }
+  }
+  
+
 
 @media(max-width: 900px){   
     .jogo_de_cartas{
@@ -477,9 +529,10 @@ main{
         
     }
     .galeria_imagens_inicio{
+        h1{
+            font-size: 35px;
+        }
         .container-images{
-            margin: 50px;
-            box-shadow: 0 0 0 5px #ffc107;
             img{
                 margin: 20px;
                 border-radius: 20px;
@@ -509,12 +562,7 @@ main{
         }
 
     }
-    .dropdown-menu {
-        width: 100vw; /* Garante que a largura mínima preencha todo o texto */
-        padding: 0.5rem 1rem; /* Ajusta o espaço interno */
-        white-space: nowrap; /* Evita quebra de linha nos textos */
-        box-sizing: border-box; /* Inclui padding no cálculo da largura */
-      }
+
     .participacao{
         h1{color: #ffc107; text-align: center; font-size: 50px; font-style:initial}
         h2{color: aliceblue; text-align: center; font-size: 40px;}
@@ -736,10 +784,14 @@ main{
         
     }
 
+    
 }
 
 @media(max-width: 407px){
-
+    .logo_sinergy img{
+        height:70px;
+        width:20px;
+    }
     .article-forms{
         margin-top: 10vh;
     }
@@ -750,7 +802,20 @@ main{
        padding-top: 30px;
     }
 
-
+    .carousel-container {
+        margin-top: 10vh;
+        width: 90%; /* Ocupa 70% da largura da tela */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        position: relative; /* Mantém o conteúdo posicionado */
+      border-radius: 15px; /* Define as bordas arredondadas */
+      overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona um sombreamento elegante (opcional) */
+        margin-top: 5vh;
+      }
+    .carousel-inner img {
+        object-fit: cover; /* Garante que as imagens fiquem bem ajustadas *//* Define uma altura padrão */
+        height: 20vh;
+      }
     
     .carrosel1{
         margin-top: 50px;
