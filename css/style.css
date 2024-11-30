@@ -137,7 +137,7 @@ body{
 }
 
 .sac-form{
-    max-width: 50%;
+    width: 50%;
     height: 40%;
     margin: 50px auto;
     padding: 20px;
@@ -256,7 +256,7 @@ textarea {
     float: right;
     display: flex;
     padding-top: 40px;
-    margin-top: 10vh;
+    margin-top: 20vh;
     margin-right: 35vw;
     width: 12vh;
     img{
@@ -361,7 +361,6 @@ header{
     color: #000000;
     text-align: center;
 }
-.reconhecimentos_inicio{
     .Apresentacao{
         padding-left: 5vw;
         display: inline-block;
@@ -369,14 +368,12 @@ header{
         color: #000000;
         width: 50vw;
         font-size: 25px;
-    h1{
-        font-size: 50px;
-        font-weight: 600;
+        h2{
+            font-size: 25px;
+        }
+    
     }
-    h2{
-        font-size: 25px;
-    }
-}
+    
     .foto_premio{
         display: inline-block;
         img{
@@ -389,7 +386,7 @@ header{
             margin-bottom: 20vh;
         }
     }
-}
+
 .premio_sinergy{
     padding-right: 25%;
     
@@ -463,10 +460,6 @@ header{
     text-align: center;
 }
 
-
-main{
-
-}
 
 .container-video{
     display: flex; /* Define o contêiner como um flexbox */
@@ -578,7 +571,10 @@ main{
         display: block;
         text-align: center;
         margin: 2px 0;
-        
+        img{
+            width: 350px;
+            height: 300px;
+        }
     }
     .galeria_imagens_inicio{
         h1{
@@ -593,8 +589,8 @@ main{
     }
     }
     .main-cartas{
-        margin-left: 5vh;
-        margin-right: 5vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
     }
     
     main{
@@ -614,6 +610,10 @@ main{
         }
 
     }
+
+    .botao_trajetoria {
+        width: 30vw;
+      }
 
     .participacao{
         h1{color: #ffc107; text-align: center; font-size: 50px; font-style:initial}
@@ -643,14 +643,14 @@ main{
     }
     
     .container-images-lado{
-        float: none;
-        display: block;
-        padding-top: 80px;
+        margin-top: 400px;
         justify-content: center; /* Centraliza horizontalmente */
         align-items: center; /* Centraliza verticalmente */
         margin-left: 10vw;
+        margin-bottom: 20px;
         img{
-            width: 80vw;
+            width: 350px;
+            height: 300px;
             border-radius: 20px;
         }
         
@@ -664,7 +664,6 @@ main{
     }
     .trajetoria{
         max-width: 100%;
-        padding-top: 100px;
         display: flex;
         img{
             width: 100%;
@@ -828,10 +827,31 @@ main{
 
     }
     iframe{
-        
+        width: 350px;
+        height: 300px;
     }
-
+    .textoSinergyCartas{
+        margin-left: -10px;
+    }
     
+    .Apresentacao{
+        padding-left: 1vw;
+        display: inline-block;
+        text-align: justify;
+        color: #000000;
+        width: 50vw;
+        font-size: 25px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .dashboard{
+        width: 400px;
+        height: 500px;
+    }
+    .sac-form{
+        width: 40vh;
+    }
 }
 
 @media(max-width: 407px){
@@ -871,19 +891,49 @@ main{
         margin-top: 5vh;
     }
     .reconhecimentos_inicio{
+        margin-top: 20px;
         width: 95vw;
         margin-left:2.5vw;
         box-shadow: 0 0 0 5px #ffc107;
-        .foto_premio{
-            display: block;
-            justify-content: center;
-            margin-top: 200px;
-            img{
-                margin-bottom: 5vw;
-                margin-left: 10vw;
-                width: 75vw;
-                height: 90vw;
+       
             }
         }
+    .container-images-meio{
+        display: block;
+        text-align: center;
+        margin: 2px 0;
+        img{
+            width: 250px;
+            height: 200px;
+        }
     }
-}
+
+    .carousel-container{
+        margin-top: 80px;
+    }
+
+    .container-images-lado{
+        margin-top: 150vw;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        margin-left: 10vw;
+        img{
+            width: 80vw;
+            border-radius: 20px;
+        }
+        
+    }
+        h3{
+        margin-top: 20px;
+    }
+    .main-cartas{
+        margin-left: 1vh;
+        margin-right: 1vh;
+    }
+    .reconhecimentos_inicio{
+        margin-top: 4vh;
+    }
+    .dashboard{
+        width: 300px;
+        height: 300px;
+    }
