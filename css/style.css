@@ -110,10 +110,10 @@ body{
         color: #000; /* Cor do texto */
         border: none; /* Remove a borda */
         border-radius: 10px;
-        width: 12vw;
-        height: 5vh;
+        width: 15vw;
+        height: 7vh;
         margin-top: 2vh;
-        font-size: 15px; /* Tamanho do texto */
+        font-size: 18px; /* Tamanho do texto */
         cursor: pointer; /* Cursor de mão ao passar por cima */
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
         transition: transform 0.2s, background-color 0.3s; /* Efeitos suaves */
@@ -137,14 +137,14 @@ body{
 }
 
 .sac-form{
-    max-width: 80%;
+    max-width: 50%;
     height: 40%;
     margin: 50px auto;
     padding: 20px;
     background-color: #ffc107;
     border: 1px solid #ddd;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
 }
 
 label {
@@ -226,9 +226,6 @@ textarea {
         padding: 10px;
     }
 }
-.mainsobre{
-    padding-top: 10vh;
-}
 
 .container-lado{
     width: 45vw;
@@ -238,7 +235,7 @@ textarea {
     margin-left: 6vw;
     display: inline-block;
     h3{
-        font-size: 20px;
+        font-size: 30px;
         color: black;
     }
     h1{
@@ -250,7 +247,6 @@ textarea {
         height: 50vh;
         font-size: 18px;
         border-radius:20px ;
-        background-color: aliceblue; 
         color: #000000;
         text-align: justify;
     }
@@ -260,7 +256,7 @@ textarea {
     float: right;
     display: flex;
     padding-top: 40px;
-    margin-top: 3vh;
+    margin-top: 10vh;
     margin-right: 35vw;
     width: 12vh;
     img{
@@ -270,7 +266,9 @@ textarea {
     }
 }
 .sobreprincipal{
-    height: 55vh;
+    height: 70vh;
+    padding-bottom: 10vh ;
+    
 }
 
 .trajetoria{
@@ -360,32 +358,35 @@ header{
     margin-top: 2vw;
     width: 100vw;
     font-size: 50px;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
 }
 .reconhecimentos_inicio{
-    width: 95vw;
-    margin-left:2.5vw;
-    box-shadow: 0 0 0 5px #212529;
-    .Sinergia{font-size: 50px;
-        color: #ffffff;
-        text-align: center;}
-    h2{
-        padding-left: 10vh;
+    .Apresentacao{
+        padding-left: 5vw;
         display: inline-block;
         text-align: justify;
+        color: #000000;
         width: 50vw;
-        height: 20vmax;
+        font-size: 25px;
+    h1{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    h2{
         font-size: 25px;
     }
+}
     .foto_premio{
         display: inline-block;
-        justify-content: center;
         img{
-            margin-bottom: 5vw;
-            margin-left: 10vw;
-            width: 25vw;
-            height: 30vw;
+            width: 20vw;
+            height: 50vh;
+            margin-left: 15vw;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20vh;
         }
     }
 }
@@ -434,6 +435,10 @@ header{
     height: 100%;
     border-radius: 20px;
     backface-visibility: hidden;
+    img{
+        border-radius: 20px;
+    }
+    
     .card-content p {
         overflow: hidden; /* Evita que o conteúdo vaze */
         text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
@@ -477,7 +482,6 @@ main{
 .SAC{
     text-align: center;
     color: #000000;
-    background-color: #ffc107;
     border: 5px;
 }
 
@@ -738,13 +742,7 @@ main{
             text-align: justify;
         }
     }
-    .Sinergia{
-        margin-top: 2vh;
-        width: 100vw;
-        font-size: 50px;
-        color: #ffffff;
-        text-align: center;
-    }
+
     .reconhecimentos_inicio{
         width: 95vw;
         margin-left:2.5vw;
@@ -753,6 +751,7 @@ main{
             
             color: #ffffff;
             text-align: center;}
+        
         h2{
             padding-left: 2.5vh;
             display: block;
